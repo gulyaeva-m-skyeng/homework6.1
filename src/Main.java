@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -8,5 +10,17 @@ public class Main {
         String lastName = "Ivanov";
         String fullName = lastName + " " + firstName + " " + middleName;
         System.out.println("ФИО сотрудника - " + fullName);
+
+        //task 2
+        System.out.println("Task 2");
+        StringBuilder fullNameSb = new StringBuilder();
+        String fullName1 = fullNameSb.append(firstName)
+                .append(" ")
+                .append(middleName)
+                .append(" ")
+                .append(lastName)
+                .toString();
+        String upperCaseFullName = fullName1.toUpperCase();
+        System.out.println("Данные ФИО сотрудника для заполнения отчета - " + upperCaseFullName);
     }
 }
